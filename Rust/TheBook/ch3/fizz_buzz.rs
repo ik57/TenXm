@@ -15,7 +15,7 @@ use rand::Rng;
 fn main() {
     let mut rng = rand::thread_rng();
     let mut array = [1; 12];
-    for i in 0..array.len(){
+    for i in array{
         array[i] = rng.gen_range(1..=100);
         if (array[i] % 3) == 0 && (array[i] % 5) == 0{
             println!("Random number: {} is FizzBuzz", array[i]);
